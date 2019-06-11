@@ -4,19 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PageExampleComponent } from './page-example/page-example.component';
-import { HomeworksFilterPipe } from './homeworks-filter.pipe';
 import { HomeworksServiceService } from './homeworks-service.service';
+import { HomeModule } from './home/home.module';
+import { HomeworksModule } from './homeworks/homeworks.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageExampleComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    HomeModule,
+    HomeworksModule,
+    AppRoutingModule,
   ],
   providers: [
     HomeworksServiceService

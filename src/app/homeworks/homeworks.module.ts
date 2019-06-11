@@ -14,9 +14,10 @@ import { HomeworksRoutingModule } from './homeworks-routing.module';
     HomeworkDetailComponent
   ],
   imports: [
-    CommonModule,
     SharedModule,
     HomeworksRoutingModule
+  ],
+  exports: [
   ],
   providers: [
     HomeworkDetailGuard

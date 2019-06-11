@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [WelcomeComponent],
   imports: [
-    CommonModule,
+    FormsModule,
     HomeRoutingModule
   ]
 })

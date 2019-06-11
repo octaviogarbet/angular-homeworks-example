@@ -10,7 +10,7 @@ const homeworkRoutes: Routes = [
   { 
     path: 'homework/:id',
     component: HomeworkDetailComponent,
-    canActivate: HomeworkDetailGuard
+    canActivate: [HomeworkDetailGuard]
  }
 ];
  

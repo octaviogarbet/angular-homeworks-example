@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeworksServiceService } from '../homeworks-service.service';
-import { Homework } from '../models/homework';
+import { HomeworksServiceService } from '../../homeworks-service.service';
+import { Homework } from '../../models/homework';
 
 @Component({
   selector: 'app-homework-list',

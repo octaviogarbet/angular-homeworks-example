@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Homework } from '../models/Homework';
+import { Homework } from '../../models/Homework';
 
 @Component({
   selector: 'app-homework-detail',

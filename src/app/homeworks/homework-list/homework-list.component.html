@@ -17,7 +17,7 @@
 </button>
 <tbody>
     <tr *ngFor='let homework of homeworks | HomeworksFilter:listFilter'>
-        <td><a [routerLink]="['/homeworks', homework.id]"> {{homework.id | uppercase}} </a></td>
+        <td><a [routerLink]="['/homework', homework.id]"> {{homework.id | uppercase}} </a></td>
       <td>{{homework.description  | uppercase}}</td>
       <td>{{homework.dueDate}}</td>
       <td>{{homework.score}}</td>

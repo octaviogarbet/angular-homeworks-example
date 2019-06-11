@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
+import { PageExampleComponent } from './page-example/page-example.component';
+import { StudentsRoutingModule } from './students-routhing.module';
+import { StudentsListComponent } from './students-list/students-list.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PageExampleComponent,
+    StudentsListComponent
+  ],
   imports: [
-    CommonModule
+    SharedModule,
+    StudentsRoutingModule
   ]
 })
 export class StudentsModule { }
