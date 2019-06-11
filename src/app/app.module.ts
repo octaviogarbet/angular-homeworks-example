@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeworksServiceService } from './homeworks-service.service';
 import { HomeModule } from './home/home.module';
 import { HomeworksModule } from './homeworks/homeworks.module';
+import { environment } from '../environments/environment';
+import { HttpClientModule }    from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,11 @@ import { HomeworksModule } from './homeworks/homeworks.module';
     HomeModule,
     HomeworksModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
-    HomeworksServiceService
+    HomeworksServiceService,
+    { provide: 'ApiEndpoint', useValue: environment.apiEndpoint }
   ],
   bootstrap: [AppComponent]
 })
