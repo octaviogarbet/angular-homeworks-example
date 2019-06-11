@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable()
 export class HomeworksServiceService {
 
-  homeworksUrl = '/api/permisos/';
+  homeworksUrl = '/api/homeworks/';
 
   constructor(
     @Inject('ApiEndpoint') private apiEndpoint: string,
@@ -38,7 +38,6 @@ export class HomeworksServiceService {
         score: 4,
         exercises: []
       }
-      
     ];
   }
 
